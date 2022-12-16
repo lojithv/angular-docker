@@ -9,4 +9,3 @@ services:
     container_name: angular-ui
     volumes:
        - ../angular-docker:/usr/src/app/angular-docker
-       - /usr/src/app/angular-docker/node_modules
