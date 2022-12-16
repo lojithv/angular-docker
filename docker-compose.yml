@@ -1,0 +1,12 @@
+version: '2.12.2'
+services:
+  angular-ui:
+    build:
+      context: ../angular-docker
+      dockerfile: Dockerfile-dev
+    ports:
+      - "4201:4201"
+    container_name: angular-ui
+    volumes:
+       - ../angular-docker:/usr/src/app/angular-docker
+       - /usr/src/app/angular-docker/node_modules
